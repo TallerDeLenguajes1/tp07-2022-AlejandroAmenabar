@@ -41,7 +41,7 @@ foreach (tarea item in tareasPendientes)
 
 tareasPendientes = tareasPendientes.Except(tareasRealizadas).ToList(); //elimino las tareas pendientes que pasaron a realizadas
 //se lee tareas pendientes va a ser igual a tareas pendientes excepto las tareas realizadas contenidas en tareas pendientes, y luego castea a lista porque except no es de lista
-
+//duda: que pasa si en una segunda vuelta, tengo un tareasRealizadas con mas elementos que pendientes, funciona el except?
 //MOSTRAR TAREAS REALIZADAS Y PENDIENTES
 Console.WriteLine("\nLAS TAREAS REALIZADAS SON: ");
 foreach(tarea item in tareasRealizadas){
